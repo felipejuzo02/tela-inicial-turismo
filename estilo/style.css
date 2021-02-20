@@ -1,0 +1,200 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ramabhadra', sans-serif;
+}
+
+.fundo{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../imagens/bk.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.logo{
+	width: 100px;
+	cursor: pointer;
+}
+
+.menu-superior{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	height: 15%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+button{
+	color: #fff;
+	padding: 10px 25px;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition: .2s ease-in;
+}
+
+.menu-superior button:hover{
+	background-color: white;
+	color: #002b7c;
+}
+
+.descritivo-principal{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+button:nth-child(3n){
+	margin-left: 0;
+}
+
+h1{
+	font-size: 74px;
+	margin: 10px 0 30px;
+	line-height: 74px
+}
+
+.descritivo-principal button:hover{
+	background-color: white;
+	color: #a591ac;
+}
+
+.menu-lateral{
+	width: 50px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.5;
+	z-index: 2;
+}
+
+.menu{
+	display: block;
+	width: 35px;
+	margin: 50px auto 0;
+	cursor: pointer;
+}
+
+.icons-sociais img{
+	width: 25px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+
+.icons-sociais{
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.birds-left img{
+	width: 50px;
+	animation: direita-para-esquerda 12s linear infinite;
+}
+
+.birds-left{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	right: -70px;
+	top: 10%;
+}
+
+@keyframes direita-para-esquerda{
+	0%{
+		transform: translateX();
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-220vh);
+		opacity: 0;
+	}
+}
+
+.birds-left img:nth-child(1){
+	animation-delay: 1s;
+}
+
+.birds-left img:nth-child(2){
+	animation-delay: 3s;
+}
+
+.birds-left img:nth-child(3){
+	animation-delay: 4s;
+}
+
+.birds-left img:nth-child(4){
+	animation-delay: 0s;
+}
+
+.birds-right img{
+	width: 50px;
+	animation: esquerda-para-direita 12s linear infinite;
+}
+
+.birds-right{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	left: -70px;
+	top: 50%;
+}
+
+@keyframes esquerda-para-direita{
+	0%{
+		transform: translateX();
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(240vh);
+		opacity: 0;
+	}
+}
+
+.birds-right img:nth-child(1){
+	animation-delay: 2s;
+}
+
+.birds-right img:nth-child(2){
+	animation-delay: 1s;
+}
+
+.birds-right img:nth-child(3){
+	animation-delay: 3s;
+}
+
+.birds-right img:nth-child(4){
+	animation-delay: 5s;
+}
+.birds-right img:nth-child(5){
+	animation-delay: 4s;
+}
